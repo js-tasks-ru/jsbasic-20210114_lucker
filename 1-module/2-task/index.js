@@ -11,8 +11,16 @@ function print(text) {
  * @param {string | null} name
  * @returns {boolean}
  */
+
 function isValid(name) {
-  // ваш код...
+    if (name === null) {
+      return false;
+    }
+    if(name.length >= 4 && !(name.indexOf(' ') !== -1)) {
+      return true;
+    } else {
+      return false;
+    }
 }
 
 function sayHello() {
