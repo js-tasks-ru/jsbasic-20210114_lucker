@@ -4,5 +4,13 @@
  * @returns {{min:number, max:number}}  объект
  */
 function getMinMax(str) {
-  // ваш код...
+    let numbers = str.replace(/[^0-9\\.\\-]/g, ' ').replace(/\s+/g, ' ').trim().split(' ');//str.split(',')
+
+    let numbers_obj = {
+    max: Math.max.apply(null, numbers),
+    min: Math.min.apply(null, numbers)
+    };
+
+    return numbers_obj;
 }
+

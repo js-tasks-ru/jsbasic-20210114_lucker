@@ -5,5 +5,9 @@
  * @returns {number[]}
  */
 function filterRange(arr, a, b) {
-  // ваш код...
+  let array = arr.filter((num) => {
+    return (num >= a && num <= b);
+  })
+
+  return array;
 }
