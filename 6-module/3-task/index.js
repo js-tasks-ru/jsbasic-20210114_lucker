@@ -29,18 +29,10 @@ export default class Carousel {
     `;
 
     this.onClick()
-    
-    // carousel_inner.innerHTML += element_slide;
+
     carousel_inner.append(element_slide);
 
-    console.log(carousel_inner);
-
     }
-    
-    this.elem.append(carousel_inner);
-    document.body.append(this.elem);
-
-    // console.log(this.elem);
 
   let position = 0;
   let slide_focus = 1;
